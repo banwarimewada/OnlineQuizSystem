@@ -1,27 +1,64 @@
-# Online Quiz System (Java)
+Online Quiz System (Java)
 
-A simple console-based MCQ quiz system built in Java.
+A simple and structured console-based MCQ Quiz System built in Java.
+This project demonstrates file handling, OOP concepts, packages, modular design, and user interaction through a command-line interface.
 
-## Features
-- Take shuffled quizzes from questions.csv
-- Admin can add questions
-- Results are saved to data/results.csv
-- UML diagrams and project report included
+Features
+User Mode
 
-## Files added
-- `diagrams/` - UML diagrams (usecase.png, class.png, sequence.png, architecture.png)
-- `project_report.pdf` - Project report ready for submission
-- `java_project_guidelines.pdf` - Original assignment guidelines (if present)
+    
+    Attempt MCQ quizzes
 
-## How to run
-1. Ensure JDK 8+ is installed.
-2. From the project root:
-```powershell
-mkdir out
-Get-ChildItem -Path .\src -Recurse -Filter *.java | ForEach-Object { javac -d out $_.FullName }
-java -cp out Main
-```
+Questions are randomly shuffled
 
-## License
-MIT
+Instant score calculation
 
+Results saved automatically
+
+    Admin Mode
+
+Add new questions from the console
+
+All questions stored in data/questions.csv
+
+   Storage
+
+.Questions → data/questions.csv
+
+Results → data/results.csv
+
+    Documentation
+
+Complete project_report.pdf
+
+UML diagrams included:
+
+Use Case Diagram
+
+Class Diagram
+
+Sequence Diagram
+
+Architecture Diagram
+
+  Project Structure
+OnlineQuizSystem/
+│
+├── src/
+│   ├── Main.java
+│   ├── model/
+│   ├── service/
+│   └── util/
+│
+├── data/
+│   ├── questions.csv
+│   └── results.csv
+│
+├── Screenshots/
+│   └── (execution screenshots)
+│
+├── ULM/
+│   ├── diagrams/
+│   └── project_report.pdf
+│
+└── run.bat       (compile & run helper script)
